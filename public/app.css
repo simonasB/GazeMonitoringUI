@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.header {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+
+.navigation {
+    height: 95vh;
+    background-color: black;
+    color: white;
+    width: 8vw;
+}
+
+.main {
+    width: 92vw;
+    overflow-y: scroll;
+    height: 95vh;
+}
+
+.ChartContent {
+    margin: 20px;
+}
+
+.navigationLink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.navigationButton {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 20px;
+    background-color: #2e2e30;
+}
+
+.navigationLink:hover {
+    background-color: #181819;
+    color: #d6d6d8;
+}
