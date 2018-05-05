@@ -25,7 +25,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="header">LOGO</div>
+                <div className="header">EYE TRACKING</div>
                 <div className="container">
                     <div className="navigation">
                         <div className="navigationButton">

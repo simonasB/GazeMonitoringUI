@@ -27,13 +27,12 @@ class Grid extends Component {
 
     render() {
         const columnDefs = [
+                { headerName: 'Name', field: 'name' },
                 { headerName: 'Age', field: 'age' },
                 { headerName: 'Details', field: 'details' },
-                { headerName: 'ID', field: 'id' },
-                { headerName: 'Name', field: 'name' },
+                { headerName: 'Session Start Time', field: 'session_start_timestamp' },                
                 { headerName: 'Sessions End time', field: 'session_end_timestamp' },
                 { headerName: 'Session ID', field: 'session_id' },
-                { headerName: 'Session Start Time', field: 'session_start_timestamp' },
             ];
   
       const style = {
