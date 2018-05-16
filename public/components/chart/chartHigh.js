@@ -18,8 +18,26 @@ const MyChart = (props) => {
     boost(Highcharts);
     applyExporting(Highcharts);
     addCVS(Highcharts);
+
+    const exporting = { 
+            buttons: {
+                contextButton: {
+                    menuItems: ['printChart',
+                    'separator',
+                    'downloadPNG',
+                    'downloadJPEG',
+                    'downloadPDF',
+                    'downloadSVG',
+                    'separator',
+                    'downloadCSV',
+                    'downloadXLS'
+                ]
+                }
+            }
+      };
+
     return (
-        <HighchartsChart>
+        <HighchartsChart exporting={exporting}>
             <Chart zoomType="x" />
             <Title>{props.title}</Title>
             <Legend>
