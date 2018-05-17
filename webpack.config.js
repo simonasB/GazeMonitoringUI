@@ -7,7 +7,7 @@ config = {
     devtool: '#source-map',
 
     mode: 'production',
-    
+
     entry: path.resolve('./public/index.js'),
 
     output: {
@@ -25,7 +25,12 @@ config = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }
+            },
+            { 
+                test: /.(jpg|png|svg)$/,
+                loader: 'file-loader',
+                options: { name: '[path][name].[hash].[ext]',},
+            },
         ]
     },
     plugins: [
@@ -34,12 +39,12 @@ config = {
             template: 'index.html'
         }),
     ],
-    resolve : {
+    resolve: {
         alias: {
             "ag-grid": path.resolve('./node_modules/ag-grid')
         }
     },
-    optimization : {
+    optimization: {
         splitChunks: {
             chunks: "all",
             minSize: 30000,
@@ -58,7 +63,7 @@ config = {
                     priority: -20,
                     reuseExistingChunk: true
                 }
-            } 
+            }
         }
     }
 

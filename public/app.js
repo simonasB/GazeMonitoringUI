@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Content from './components/content/content';
 import { Link } from 'react-router-dom';
 import './app.css'
+import mainLogo from './components/assets/logo.png';
 
 class App extends Component {
     constructor(props) {
@@ -25,7 +26,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="header">EYE TRACKING</div>
+                <div className="header">
+                    <img  src={mainLogo} alt="fireSpot"/>
+                </div>
                 <div className="container">
                     <div className="navigation">
                         <div className="navigationButton">

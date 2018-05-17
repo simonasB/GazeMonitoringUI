@@ -2,8 +2,10 @@ import express from 'express';
 import path from 'path';
 import compression from 'compression';
 import db from './db';
+import config from './config'
 
-const PORT = 3000;
+console.log(config);
+const PORT = config.web.port;
 const app = express();
 
 app.use(compression());

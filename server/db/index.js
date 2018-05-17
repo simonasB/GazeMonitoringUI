@@ -1,9 +1,8 @@
 import { Pool } from 'pg';
-
-const connectionString = 'postgresql://gazemonitoring2:Password1@localhost:5432/gazemonitoring2';
+import config from '../config'
 
 const pool = new Pool({
-    connectionString: connectionString,
+    connectionString: config.postgresql,
 });
 
 module.exports = {
