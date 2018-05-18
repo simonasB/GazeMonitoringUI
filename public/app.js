@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Content from './components/content/content';
 import { Link } from 'react-router-dom';
 import './app.css'
-import mainLogo from './components/assets/logo.png';
+import mainLogo from './components/assets/logo3.png';
 
 class App extends Component {
     constructor(props) {

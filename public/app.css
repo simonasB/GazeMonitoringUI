@@ -10,14 +10,14 @@ body {
 
 .header {
     width: 100vw;
-    background-color: black;
+    background-color: #464646;
     color: white;
     height: 5vh;
 }
 
 .navigation {
     height: 95vh;
-    background-color: black;
+    background-color: #464646;
     color: white;
     width: 8vw;
 }
